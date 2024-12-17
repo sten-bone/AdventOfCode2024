@@ -1,21 +1,20 @@
 ﻿namespace AdventOfCode2024.UnitTests;
 
 [TestClass]
-public class Day9Tests
+public class Day11Tests
 {
     private const string Input = """
-                                 2333133121414131402
+                                 125 17
                                  """;
 
     [TestMethod]
     public void Part1()
     {
-        Assert.AreEqual(1928, Day9.CalculateChecksum(Input));
+        Assert.AreEqual(55312, Day11.CountStonesAfterNBlinks(Input, 25));
     }
 
     [TestMethod]
     public void Part2()
     {
-        Assert.AreEqual(2858, Day9.CalculateChecksumViaFileMove(Input));
     }
 }
